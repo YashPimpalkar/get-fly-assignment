@@ -1,0 +1,97 @@
+/* main.css */
+
+.main {
+    padding: 40px 10px; /* Adjust padding as needed */
+  }
+  
+  .main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin: 20px 10px;
+    color: #333; /* Change color */
+    text-align: center; /* Center align */
+  }
+  
+  .drive-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .container {
+    display: inline;
+    align-items: stretch !important;
+    padding: 10px;
+    flex-direction: row;
+    align-content: center !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+  }
+  
+  .drive-card {
+    background-color: #ffffff; /* Change background color */
+    padding: 20px;
+    border-radius: 12px; /* Adjust border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    transition: transform 0.3s; /* Add transition */
+    border: 1px solid #ddd; /* Add border */
+  }
+  
+  .drive-card:hover {
+    transform: translateY(-10px); /* Hover effect */
+  }
+  
+  .drive-card h3 {
+    font-size: 22px; /* Adjust font size */
+    margin-bottom: 10px;
+    color: #007bff; /* Change color */
+  }
+  
+  .drive-card p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #555; /* Change color */
+    text-align: justify;
+  }
+  
+  .drive-card strong {
+    color: #333; /* Change color */
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 10px; /* Add gap between buttons */
+  }
+  .button-container {
+    display: flex;
+    justify-content: space-between; /* Align buttons to start and end */
+    gap: 10px; /* Add gap between buttons */
+  }
+  
+  .apply-button-left {
+    order: 2; /* Order the left button */
+  }
+  
+  .apply-button-right {
+    order: 1; /* Order the right button */
+  }
+  
+  .apply-button {
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove default border */
+    padding: 5px 10px; /* Button padding */
+    border-radius: 5px; /* Button border radius */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition effect */
+  }
+  
+  .apply-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  

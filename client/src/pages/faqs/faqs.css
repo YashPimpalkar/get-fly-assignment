@@ -1,0 +1,93 @@
+/* FAQ.css */
+
+.faq-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  
+  .faq-section {
+    padding: 40px 10px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin: 20px 10px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .faq-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  
+  .faq-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    border: 1px solid #ddd;
+  }
+  
+  .faq-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .faq-card p {
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .faq-card strong {
+    color: #333;
+  }
+  
+  .new-question {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .new-question input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+  }
+  
+  .new-question button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .new-question button:hover {
+    background-color: #0056b3;
+  }
+  

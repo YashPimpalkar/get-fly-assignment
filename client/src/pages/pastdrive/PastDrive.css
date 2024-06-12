@@ -1,0 +1,67 @@
+/* main.css */
+
+.main {
+    padding: 40px 10px; /* Adjust padding as needed */
+  }
+  
+  .main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  h2 {
+    font-size: 24px;
+    margin: 20px 10px;
+    color: #333; /* Change color */
+    text-align: center; /* Center align */
+  }
+  
+  .drive-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  
+    grid-gap: 20px;
+  }
+  
+  .drive-card {
+    background-color: #ffffff; /* Change background color */
+    padding: 20px;
+    border-radius: 12px; /* Adjust border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    transition: transform 0.3s; /* Add transition */
+    border: 1px solid #ddd; /* Add border */
+  }
+  
+  .drive-card:hover {
+    transform: translateY(-10px); /* Hover effect */
+  }
+  
+  .drive-card h3 {
+    font-size: 22px; /* Adjust font size */
+    margin-bottom: 10px;
+    color: #007bff; /* Change color */
+  }
+  
+  .drive-card p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #555; /* Change color */
+  }
+  
+  .drive-card strong {
+    color: #333; /* Change color */
+  }
+  
+  .apply-button {
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove default border */
+    padding: 5px 10px; /* Button padding */
+    border-radius: 5px; /* Button border radius */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition effect */
+  }
+  
+  .apply-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }

@@ -1,0 +1,121 @@
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  padding: 40px 10px;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 20px 10px;
+  color: #333;
+  text-align: center;
+}
+
+.seminar-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.seminar-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  border: 1px solid #ddd;
+}
+
+.seminar-card:hover {
+  transform: translateY(-10px);
+}
+
+.seminar-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.seminar-card p {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.seminar-card strong {
+  color: #333;
+}
+
+.apply-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.apply-button:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .main {
+    padding: 20px 10px;
+  }
+
+  .seminar-card {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 20px;
+  }
+
+  .seminar-card {
+    padding: 10px;
+  }
+
+  .seminar-card h3 {
+    font-size: 20px;
+  }
+
+  .apply-button {
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .seminar-list {
+    grid-template-columns: 1fr;
+  }
+
+  .seminar-card {
+    padding: 10px;
+    font-size: 14px; /* Adjust font size for better readability */
+  }
+
+  .seminar-card h3 {
+    font-size: 18px; /* Adjust font size for better readability */
+  }
+
+  .apply-button {
+    padding: 6px 12px; /* Adjust button padding */
+    font-size: 14px; /* Adjust button font size */
+  }
+}
