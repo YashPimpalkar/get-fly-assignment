@@ -26,6 +26,7 @@ app.use("/api/notice",noticeRoute);
 app.use("/api/faqs",faqRoute);
 app.use("/api/seminar-application",semAppRoute);
 app.use("/api/drives",driveRoute);
+app.get("/", (req, res) => res.send("Express on Vercel"));
 app.listen(PORT,()=>{
     console.log("API working");
 })
