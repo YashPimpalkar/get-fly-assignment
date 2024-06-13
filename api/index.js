@@ -7,6 +7,8 @@ import noticeRoute from "./routes/notification.js"
 import faqRoute from "./routes/faqs.js";
 import semAppRoute from "./routes/seminar-application.js"
 import driveRoute from "./routes/drive.js"
+import dotenv from "dotenv"
+dotenv.config()
 const app =express();
 app.use(cors());
 app.use(express.json());
