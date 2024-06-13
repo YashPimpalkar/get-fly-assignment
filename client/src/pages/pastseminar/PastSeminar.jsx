@@ -8,7 +8,7 @@ const PastSeminar = () => {
   const [seminars, setSeminars] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/api/seminars/find/past')
+    axios.get('https://mysql-server-yash.vercel.app/api/seminars/find/past')
       .then(response => {
         setSeminars(response.data);
       })

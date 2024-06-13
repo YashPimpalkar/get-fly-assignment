@@ -7,7 +7,7 @@ const FAQ = () => {
   const [newQuestion, setNewQuestion] = useState('');
 
   useEffect(() => {
-    axios.get('http://localhost:8000/api/faqs')
+    axios.get('https://mysql-server-yash.vercel.app/api/faqs')
       .then(response => {
         setFaqs(response.data);
       })
@@ -16,7 +16,7 @@ const FAQ = () => {
 
   const handleAddQuestion = () => {
     if (newQuestion.trim() !== '') {
-      axios.post('http://localhost:8000/api/faqs', { question: newQuestion })
+      axios.post('https://mysql-server-yash.vercel.app/api/faqs', { question: newQuestion })
         .then(response => {
           setFaqs([response.data, ...faqs]);
           setNewQuestion('');

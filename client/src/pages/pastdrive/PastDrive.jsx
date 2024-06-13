@@ -6,7 +6,7 @@ const PastDrives = () => {
   const [drives, setDrives] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/api/drives/past')
+    axios.get('https://mysql-server-yash.vercel.app/api/drives/past')
       .then(response => {
         setDrives(response.data);
       })

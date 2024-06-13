@@ -10,7 +10,7 @@ const SeminarApplications = () => {
   const [showRegistration, setShowRegistration] = useState(false);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/api/seminars/find/future')
+    axios.get('https://mysql-server-yash.vercel.app/api/seminars/find/future')
       .then(response => {
         setSeminars(response.data);
       })
@@ -22,7 +22,7 @@ const SeminarApplications = () => {
     setShowRegistration(true);
   };
   useEffect(() => {
-    axios.get('http://localhost:8000/api/seminars/find/future')
+    axios.get('https://mysql-server-yash.vercel.app/api/seminars/find/future')
       .then(response => {
         setSeminars(response.data);
       })

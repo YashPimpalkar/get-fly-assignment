@@ -6,7 +6,7 @@ const Notification = () => {
   const [notifications, setNotifications] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/api/notice')
+    axios.get('https://mysql-server-yash.vercel.app/api/notice')
       .then(response => {
         setNotifications(response.data);
       })

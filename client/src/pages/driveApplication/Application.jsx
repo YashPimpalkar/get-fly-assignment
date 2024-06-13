@@ -7,11 +7,11 @@ const Drives = () => {
   const [pastDrives, setPastDrives] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/api/drives/latest')
+    axios.get('https://mysql-server-yash.vercel.app/api/drives/latest')
       .then(response => setCurrentDrives(response.data))
       .catch(error => console.error('Error fetching current drives:', error));
 
-    axios.get('http://localhost:8000/api/drives/past')
+    axios.get('https://mysql-server-yash.vercel.app/api/drives/past')
       .then(response => setPastDrives(response.data))
       .catch(error => console.error('Error fetching past drives:', error));
   }, []);
