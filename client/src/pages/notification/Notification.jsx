@@ -14,7 +14,7 @@ const Notification = () => {
   }, []);
 
   return (
-    <div className="notification-section notice-container">
+    <div className="notification-section notice-container ">
        <div className='anim'>
        <h2 className='heading'>Latest Updates</h2>
        </div>

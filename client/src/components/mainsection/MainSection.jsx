@@ -2,10 +2,8 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { format } from 'date-fns';
 import './main.css';
-
 const MainSection = () => {
   // const [seminars, setSeminars] = useState([]);
-
   // useEffect(() => {
   //   axios.get('http://localhost:8000/api/seminars/find/future')
   //     .then(response => {
@@ -39,11 +37,11 @@ const MainSection = () => {
   };
 
   return (
-    <div className="main-section main-container">
+    <div className="main-section main-container ">
       <h2>Latest Seminars</h2>
       <div className="drive-list">
         {currentDrives.map(drive => (
-          <div key={drive.id} className="drive-card">
+          <div key={drive.id} className="drive-card ">
             <h3>{drive.company_name}</h3>
             <p>{drive.job_description}</p>
             <div className="button-container">

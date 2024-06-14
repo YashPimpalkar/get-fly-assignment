@@ -15,7 +15,6 @@ app.use(express.json());
 app.use(bodyParser.json());
 db.connect((err) => {
   if (err) return console.error(err.message);
-
   console.log('Connected to the MySQL server.');
 });
 

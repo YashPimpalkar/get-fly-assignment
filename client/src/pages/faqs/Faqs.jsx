@@ -31,7 +31,7 @@ const FAQ = () => {
       <h2>Frequently Asked Questions</h2>
       <div className="faq-list">
         {faqs.map(faq => (
-          <div key={faq.id} className="faq-card">
+          <div key={faq.id} className="faq-card anim">
             <p><strong>Q:</strong> {faq.question}</p>
             {faq.answer && <p><strong>A:</strong> {faq.answer}</p>}
           </div>

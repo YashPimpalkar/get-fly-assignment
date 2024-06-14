@@ -6,6 +6,8 @@
   max-width: 800px;
   margin: 0 auto;
   margin-top: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .hero-container h1 {
@@ -20,18 +22,15 @@
 }
 
 .seminar-stats {
-   
   display: flex;
-  justify-content: space-around;
-  margin-top: 40px
+  margin: 10px 20px;
+  flex-direction: row;
+
+  
 }
 
 .seminar-stat {
-  padding: 10px;
-  width: 100%; /* Fluid width for each stat */
-  max-width: 100px; /* Maximum width for each stat */
-  margin-bottom: 20px; /* Added margin between stats */
-/* Include padding and border in width calculation */
+ width: 50%;
 }
 
 .seminar-stat h2 {
@@ -45,47 +44,19 @@
   color: #007bff;
 }
 
-@media screen and (min-width: 700px) and (max-width:1400px) {
- 
 
-  .seminar-stat {
-    width: calc(50% - 20px) !important;  /* Two stats per row with space between */
-    max-width: none;
-    margin-right: 20px;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-@media screen  and (max-width:700px) {
-  .seminar-stats {
-  
-    display: flex;
+@media screen and (max-width:700px) {
+  .seminar-stats{
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
-    margin-top: 40px;
-   max-width: none;
   }
 
-  .hero-container h1 {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-  }
-  .hero-container h2 {
+  .seminar-stats h2{
     font-size: 1em;
-    margin-bottom: 20px;
-  }
-  
-  .hero-container p {
-    font-size: 1em;
-    margin-top: 20px;
+    margin-bottom: 10px;
   }
 }
+
+
+
+

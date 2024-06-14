@@ -12,13 +12,11 @@ import Footer from './components/footer/Footer';
 function App() {
   return (
     <div className="App">
-   
       <Navbar />
-      
         <main className="main-content">
        <Routes>
-         <Route exact path="/getfly-assignment"  element={<Navigate to="/Dashboard" />} />
-         <Route path="/Dashboard" element={<Dashboard />} />
+         <Route path="/"  element={<Navigate to="/dashboard" />} />
+         <Route path="/dashboard" element={<Dashboard />} />
          <Route path="/notification" element={<Notification />} />
          <Route path="/faqs" element={<Faqs />} />
          <Route path="/past-drives" element={<PastDrives />} />
@@ -27,8 +25,6 @@ function App() {
        </Routes>
        <Footer />
      </main>
-   
-       
     </div>
   );
 }
