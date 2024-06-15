@@ -7,10 +7,15 @@ npm install
 in .env make changes according to your database settings
 
  DB_HOST=localhost,
+
  DB_PORT=3306,
+
  DB_USER=user,
+
  DB_PASSWORD=root,
+
  DB_NAME=sh,
+ 
  PORT=8000 
 
 type = "npm start"
