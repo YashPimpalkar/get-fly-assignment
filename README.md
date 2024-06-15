@@ -13,7 +13,7 @@ in .env make changes according to your database settings
  DB_NAME=sh \
  PORT=8000 
 
-type = "npm start"
+npm start
 
 cd .. "shift to main directory"
 
